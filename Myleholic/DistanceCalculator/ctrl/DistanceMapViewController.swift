@@ -87,13 +87,14 @@ class DistanceMapViewController: UIViewController {
 		
 		let filters = FilterInterval.catalog
 		filters.forEach{
+			
+			guard $0 != filterInterval.description else { return }
+			
 			let action = UIAlertAction(title: $0, style: .default, handler: { sender in
 				let interval = FilterInterval(rawValue: filters.index(of: sender.title!) ?? 0)!
 				self.applyFilterInterval(interval)
 			})
-			if ($0 == filterInterval.description) {
-				action.isEnabled = false
-			}
+			
 			actionSheet.addAction(action)
 		}
 		
