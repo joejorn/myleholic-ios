@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		989C2FC07F2980FAD55F4DA7 /* Pods_Myleholic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDE99E6C6D926B321A01341 /* Pods_Myleholic.framework */; };
+		D81B0E241F7FBEDB00CF948A /* JourneyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81B0E231F7FBEDB00CF948A /* JourneyListTableViewController.swift */; };
+		D823BD6F1F5A9C4100F48620 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823BD6E1F5A9C4100F48620 /* Journey.swift */; };
+		D823BD771F5C117200F48620 /* TravelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823BD761F5C117200F48620 /* TravelManager.swift */; };
+		D823BD7A1F5C31EA00F48620 /* ActiveTownFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823BD791F5C31EA00F48620 /* ActiveTownFinder.swift */; };
+		D823BD7C1F5C322900F48620 /* JourneyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823BD7B1F5C322900F48620 /* JourneyManager.swift */; };
+		D83667C51F7A48B800DECD99 /* DistanceUnitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83667C41F7A48B800DECD99 /* DistanceUnitEnum.swift */; };
+		D83667C71F7A4FE800DECD99 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83667C61F7A4FE800DECD99 /* DistanceCalculator.swift */; };
+		D844C6601F84DC8400AE29A2 /* JourneyFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844C65F1F84DC8400AE29A2 /* JourneyFormHelper.swift */; };
+		D844C6661F86820200AE29A2 /* DistanceMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844C6651F86820200AE29A2 /* DistanceMapHelper.swift */; };
+		D85877321F73E20F001FA144 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85877311F73E20F001FA144 /* Travel.swift */; };
+		D85877341F73EFE7001FA144 /* JourneyDetailLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85877331F73EFE7001FA144 /* JourneyDetailLocationView.xib */; };
+		D85877381F73F806001FA144 /* JourneyDetailLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85877371F73F806001FA144 /* JourneyDetailLocationView.swift */; };
+		D86248141F7AD8BC004650B5 /* JourneyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86248131F7AD8BC004650B5 /* JourneyDetailTableViewController.swift */; };
+		D879D0021FA5E17C007C0797 /* JourneyAB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879D0011FA5E17C007C0797 /* JourneyAB.swift */; };
+		D879D0041FA5E1AA007C0797 /* JourneyPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879D0031FA5E1AA007C0797 /* JourneyPlacemark.swift */; };
+		D879D0081FA65788007C0797 /* DistanceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879D0071FA65788007C0797 /* DistanceMapViewController.swift */; };
+		D879D00A1FA9C5E5007C0797 /* FilterInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879D0091FA9C5E5007C0797 /* FilterInterval.swift */; };
+		D8C550771F8A272A00B44DD9 /* PlacemarkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C550761F8A272A00B44DD9 /* PlacemarkParser.swift */; };
+		D8C550791F8CC49800B44DD9 /* PreferenceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C550781F8CC49800B44DD9 /* PreferenceState.swift */; };
+		D8C5507B1F8CCE2000B44DD9 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5507A1F8CCE2000B44DD9 /* PreferenceManager.swift */; };
+		D8D6C2711F8F647B004AF8BC /* PlacemarkFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6C2701F8F647B004AF8BC /* PlacemarkFormatter.swift */; };
+		D8D6EB4D1F8FAF920076864D /* MyleholicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6EB4C1F8FAF920076864D /* MyleholicTests.swift */; };
+		D8E383281F56F2F000A148AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383271F56F2F000A148AE /* AppDelegate.swift */; };
+		D8E3832F1F56F2F000A148AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E3832D1F56F2F000A148AE /* Main.storyboard */; };
+		D8E383311F56F2F000A148AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E383301F56F2F000A148AE /* Assets.xcassets */; };
+		D8E383341F56F2F000A148AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E383321F56F2F000A148AE /* LaunchScreen.storyboard */; };
+		D8E383511F56F6B300A148AE /* LocationFinderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3833D1F56F6B300A148AE /* LocationFinderRow.swift */; };
+		D8E383521F56F6B300A148AE /* LocationResultTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3833E1F56F6B300A148AE /* LocationResultTable.swift */; };
+		D8E383531F56F6B300A148AE /* LocationFinderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383401F56F6B300A148AE /* LocationFinderHelper.swift */; };
+		D8E383541F56F6B300A148AE /* ActiveLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383411F56F6B300A148AE /* ActiveLocationManager.swift */; };
+		D8E383561F56F6B300A148AE /* JourneyFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383471F56F6B300A148AE /* JourneyFormController.swift */; };
+		D8E383571F56F6B300A148AE /* JourneyFormMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383481F56F6B300A148AE /* JourneyFormMeta.swift */; };
+		D8E3835B1F56F6B300A148AE /* PreferenceFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3834F1F56F6B300A148AE /* PreferenceFormController.swift */; };
+		D8E3835C1F56F6B300A148AE /* PreferenceMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383501F56F6B300A148AE /* PreferenceMeta.swift */; };
+		D8E383611F5701B800A148AE /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E383601F5701B800A148AE /* Placemark.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8D6EB4F1F8FAF920076864D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8E3831C1F56F2F000A148AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8E383231F56F2F000A148AE;
+			remoteInfo = Myleholic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		473D022C0FDA1DA4130BFDBF /* Pods-Myleholic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myleholic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Myleholic/Pods-Myleholic.debug.xcconfig"; sourceTree = "<group>"; };
+		67562673CEFE47E4820C0FFE /* Pods-Myleholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myleholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Myleholic/Pods-Myleholic.release.xcconfig"; sourceTree = "<group>"; };
+		ADDE99E6C6D926B321A01341 /* Pods_Myleholic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myleholic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81B0E231F7FBEDB00CF948A /* JourneyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyListTableViewController.swift; sourceTree = "<group>"; };
+		D823BD6E1F5A9C4100F48620 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		D823BD761F5C117200F48620 /* TravelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelManager.swift; sourceTree = "<group>"; };
+		D823BD791F5C31EA00F48620 /* ActiveTownFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveTownFinder.swift; sourceTree = "<group>"; };
+		D823BD7B1F5C322900F48620 /* JourneyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyManager.swift; sourceTree = "<group>"; };
+		D83667C41F7A48B800DECD99 /* DistanceUnitEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceUnitEnum.swift; sourceTree = "<group>"; };
+		D83667C61F7A4FE800DECD99 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		D844C65F1F84DC8400AE29A2 /* JourneyFormHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyFormHelper.swift; sourceTree = "<group>"; };
+		D844C6651F86820200AE29A2 /* DistanceMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMapHelper.swift; sourceTree = "<group>"; };
+		D85877311F73E20F001FA144 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		D85877331F73EFE7001FA144 /* JourneyDetailLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JourneyDetailLocationView.xib; sourceTree = "<group>"; };
+		D85877371F73F806001FA144 /* JourneyDetailLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailLocationView.swift; sourceTree = "<group>"; };
+		D86248131F7AD8BC004650B5 /* JourneyDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailTableViewController.swift; sourceTree = "<group>"; };
+		D879D0011FA5E17C007C0797 /* JourneyAB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyAB.swift; sourceTree = "<group>"; };
+		D879D0031FA5E1AA007C0797 /* JourneyPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlacemark.swift; sourceTree = "<group>"; };
+		D879D0071FA65788007C0797 /* DistanceMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMapViewController.swift; sourceTree = "<group>"; };
+		D879D0091FA9C5E5007C0797 /* FilterInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInterval.swift; sourceTree = "<group>"; };
+		D8C550761F8A272A00B44DD9 /* PlacemarkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkParser.swift; sourceTree = "<group>"; };
+		D8C550781F8CC49800B44DD9 /* PreferenceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceState.swift; sourceTree = "<group>"; };
+		D8C5507A1F8CCE2000B44DD9 /* PreferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
+		D8D6C2701F8F647B004AF8BC /* PlacemarkFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkFormatter.swift; sourceTree = "<group>"; };
+		D8D6EB4A1F8FAF920076864D /* MyleholicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyleholicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D6EB4C1F8FAF920076864D /* MyleholicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyleholicTests.swift; sourceTree = "<group>"; };
+		D8D6EB4E1F8FAF920076864D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E383241F56F2F000A148AE /* Myleholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myleholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E383271F56F2F000A148AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8E3832E1F56F2F000A148AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8E383301F56F2F000A148AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8E383331F56F2F000A148AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8E383351F56F2F000A148AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E3833D1F56F6B300A148AE /* LocationFinderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationFinderRow.swift; sourceTree = "<group>"; };
+		D8E3833E1F56F6B300A148AE /* LocationResultTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationResultTable.swift; sourceTree = "<group>"; };
+		D8E383401F56F6B300A148AE /* LocationFinderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationFinderHelper.swift; sourceTree = "<group>"; };
+		D8E383411F56F6B300A148AE /* ActiveLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveLocationManager.swift; sourceTree = "<group>"; };
+		D8E383471F56F6B300A148AE /* JourneyFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyFormController.swift; sourceTree = "<group>"; };
+		D8E383481F56F6B300A148AE /* JourneyFormMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyFormMeta.swift; sourceTree = "<group>"; };
+		D8E3834F1F56F6B300A148AE /* PreferenceFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceFormController.swift; sourceTree = "<group>"; };
+		D8E383501F56F6B300A148AE /* PreferenceMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceMeta.swift; sourceTree = "<group>"; };
+		D8E383601F5701B800A148AE /* Placemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D6EB471F8FAF920076864D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E383211F56F2F000A148AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989C2FC07F2980FAD55F4DA7 /* Pods_Myleholic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C7CC5B5D9899DC2D66FE638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE99E6C6D926B321A01341 /* Pods_Myleholic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D089519923F535BF5C32FD77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				473D022C0FDA1DA4130BFDBF /* Pods-Myleholic.debug.xcconfig */,
+				67562673CEFE47E4820C0FFE /* Pods-Myleholic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D823BD781F5C31C500F48620 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				D823BD7B1F5C322900F48620 /* JourneyManager.swift */,
+				D823BD761F5C117200F48620 /* TravelManager.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		D844C6611F865E6200AE29A2 /* DistanceCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				D879D0061FA65755007C0797 /* ctrl */,
+				D879D0051FA65744007C0797 /* helper */,
+				D879D0001FA5E161007C0797 /* model */,
+			);
+			path = DistanceCalculator;
+			sourceTree = "<group>";
+		};
+		D844C6641F867F3500AE29A2 /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				D83667C41F7A48B800DECD99 /* DistanceUnitEnum.swift */,
+			);
+			path = constant;
+			sourceTree = "<group>";
+		};
+		D858772F1F73E167001FA144 /* ctrls */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383451F56F6B300A148AE /* Detail */,
+				D8E383461F56F6B300A148AE /* Form */,
+				D8E383491F56F6B300A148AE /* List */,
+			);
+			path = ctrls;
+			sourceTree = "<group>";
+		};
+		D85877301F73E1CC001FA144 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383411F56F6B300A148AE /* ActiveLocationManager.swift */,
+				D823BD791F5C31EA00F48620 /* ActiveTownFinder.swift */,
+				D83667C61F7A4FE800DECD99 /* DistanceCalculator.swift */,
+				D8C550761F8A272A00B44DD9 /* PlacemarkParser.swift */,
+				D8D6C2701F8F647B004AF8BC /* PlacemarkFormatter.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		D879D0001FA5E161007C0797 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D879D0011FA5E17C007C0797 /* JourneyAB.swift */,
+				D879D0031FA5E1AA007C0797 /* JourneyPlacemark.swift */,
+				D879D0091FA9C5E5007C0797 /* FilterInterval.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D879D0051FA65744007C0797 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				D844C6651F86820200AE29A2 /* DistanceMapHelper.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		D879D0061FA65755007C0797 /* ctrl */ = {
+			isa = PBXGroup;
+			children = (
+				D879D0071FA65788007C0797 /* DistanceMapViewController.swift */,
+			);
+			path = ctrl;
+			sourceTree = "<group>";
+		};
+		D8D6EB4B1F8FAF920076864D /* MyleholicTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6EB4C1F8FAF920076864D /* MyleholicTests.swift */,
+				D8D6EB4E1F8FAF920076864D /* Info.plist */,
+			);
+			path = MyleholicTests;
+			sourceTree = "<group>";
+		};
+		D8E3831B1F56F2F000A148AE = {
+			isa = PBXGroup;
+			children = (
+				D8E383261F56F2F000A148AE /* Myleholic */,
+				D8D6EB4B1F8FAF920076864D /* MyleholicTests */,
+				D8E383251F56F2F000A148AE /* Products */,
+				D089519923F535BF5C32FD77 /* Pods */,
+				6C7CC5B5D9899DC2D66FE638 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8E383251F56F2F000A148AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383241F56F2F000A148AE /* Myleholic.app */,
+				D8D6EB4A1F8FAF920076864D /* MyleholicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8E383261F56F2F000A148AE /* Myleholic */ = {
+			isa = PBXGroup;
+			children = (
+				D8E3833B1F56F6B300A148AE /* Core */,
+				D844C6611F865E6200AE29A2 /* DistanceCalculator */,
+				D8E383441F56F6B300A148AE /* Journey */,
+				D8E3834E1F56F6B300A148AE /* Preferences */,
+				D8E383271F56F2F000A148AE /* AppDelegate.swift */,
+				D8E3832D1F56F2F000A148AE /* Main.storyboard */,
+				D8E383301F56F2F000A148AE /* Assets.xcassets */,
+				D8E383321F56F2F000A148AE /* LaunchScreen.storyboard */,
+				D8E383351F56F2F000A148AE /* Info.plist */,
+			);
+			path = Myleholic;
+			sourceTree = "<group>";
+		};
+		D8E3833B1F56F6B300A148AE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D844C6641F867F3500AE29A2 /* constant */,
+				D85877301F73E1CC001FA144 /* helper */,
+				D8E3835F1F57018D00A148AE /* model */,
+				D8E3833C1F56F6B300A148AE /* LocationRow */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D8E3833C1F56F6B300A148AE /* LocationRow */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383401F56F6B300A148AE /* LocationFinderHelper.swift */,
+				D8E3833D1F56F6B300A148AE /* LocationFinderRow.swift */,
+				D8E3833E1F56F6B300A148AE /* LocationResultTable.swift */,
+			);
+			path = LocationRow;
+			sourceTree = "<group>";
+		};
+		D8E383441F56F6B300A148AE /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				D858772F1F73E167001FA144 /* ctrls */,
+				D823BD781F5C31C500F48620 /* helper */,
+				D8E3834A1F56F6B300A148AE /* model */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		D8E383451F56F6B300A148AE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D85877331F73EFE7001FA144 /* JourneyDetailLocationView.xib */,
+				D85877371F73F806001FA144 /* JourneyDetailLocationView.swift */,
+				D86248131F7AD8BC004650B5 /* JourneyDetailTableViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D8E383461F56F6B300A148AE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383471F56F6B300A148AE /* JourneyFormController.swift */,
+				D8E383481F56F6B300A148AE /* JourneyFormMeta.swift */,
+				D844C65F1F84DC8400AE29A2 /* JourneyFormHelper.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		D8E383491F56F6B300A148AE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D81B0E231F7FBEDB00CF948A /* JourneyListTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D8E3834A1F56F6B300A148AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D823BD6E1F5A9C4100F48620 /* Journey.swift */,
+				D85877311F73E20F001FA144 /* Travel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D8E3834E1F56F6B300A148AE /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				D8C550781F8CC49800B44DD9 /* PreferenceState.swift */,
+				D8C5507A1F8CCE2000B44DD9 /* PreferenceManager.swift */,
+				D8E3834F1F56F6B300A148AE /* PreferenceFormController.swift */,
+				D8E383501F56F6B300A148AE /* PreferenceMeta.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		D8E3835F1F57018D00A148AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D8E383601F5701B800A148AE /* Placemark.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D6EB491F8FAF920076864D /* MyleholicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D6EB531F8FAF920076864D /* Build configuration list for PBXNativeTarget "MyleholicTests" */;
+			buildPhases = (
+				D8D6EB461F8FAF920076864D /* Sources */,
+				D8D6EB471F8FAF920076864D /* Frameworks */,
+				D8D6EB481F8FAF920076864D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D6EB501F8FAF920076864D /* PBXTargetDependency */,
+			);
+			name = MyleholicTests;
+			productName = MyleholicTests;
+			productReference = D8D6EB4A1F8FAF920076864D /* MyleholicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8E383231F56F2F000A148AE /* Myleholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E383381F56F2F000A148AE /* Build configuration list for PBXNativeTarget "Myleholic" */;
+			buildPhases = (
+				1FB7AAA4AEECD1AA7BC2525E /* [CP] Check Pods Manifest.lock */,
+				D8E383201F56F2F000A148AE /* Sources */,
+				D8E383211F56F2F000A148AE /* Frameworks */,
+				D8E383221F56F2F000A148AE /* Resources */,
+				F40027E4B294DEB908A5C6B5 /* [CP] Embed Pods Frameworks */,
+				2FA0982A1B2FDE218661C4FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Myleholic;
+			productName = Myleholic;
+			productReference = D8E383241F56F2F000A148AE /* Myleholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8E3831C1F56F2F000A148AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Joe;
+				TargetAttributes = {
+					D8D6EB491F8FAF920076864D = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 6J9R9DRV68;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8E383231F56F2F000A148AE;
+					};
+					D8E383231F56F2F000A148AE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6J9R9DRV68;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8E3831F1F56F2F000A148AE /* Build configuration list for PBXProject "Myleholic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8E3831B1F56F2F000A148AE;
+			productRefGroup = D8E383251F56F2F000A148AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8E383231F56F2F000A148AE /* Myleholic */,
+				D8D6EB491F8FAF920076864D /* MyleholicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D6EB481F8FAF920076864D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E383221F56F2F000A148AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E383341F56F2F000A148AE /* LaunchScreen.storyboard in Resources */,
+				D8E383311F56F2F000A148AE /* Assets.xcassets in Resources */,
+				D85877341F73EFE7001FA144 /* JourneyDetailLocationView.xib in Resources */,
+				D8E3832F1F56F2F000A148AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB7AAA4AEECD1AA7BC2525E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myleholic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FA0982A1B2FDE218661C4FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Myleholic/Pods-Myleholic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40027E4B294DEB908A5C6B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Myleholic/Pods-Myleholic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Myleholic/Pods-Myleholic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D6EB461F8FAF920076864D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6EB4D1F8FAF920076864D /* MyleholicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E383201F56F2F000A148AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D823BD771F5C117200F48620 /* TravelManager.swift in Sources */,
+				D83667C71F7A4FE800DECD99 /* DistanceCalculator.swift in Sources */,
+				D8C550791F8CC49800B44DD9 /* PreferenceState.swift in Sources */,
+				D879D0081FA65788007C0797 /* DistanceMapViewController.swift in Sources */,
+				D823BD7A1F5C31EA00F48620 /* ActiveTownFinder.swift in Sources */,
+				D86248141F7AD8BC004650B5 /* JourneyDetailTableViewController.swift in Sources */,
+				D8E383521F56F6B300A148AE /* LocationResultTable.swift in Sources */,
+				D8E383281F56F2F000A148AE /* AppDelegate.swift in Sources */,
+				D83667C51F7A48B800DECD99 /* DistanceUnitEnum.swift in Sources */,
+				D844C6601F84DC8400AE29A2 /* JourneyFormHelper.swift in Sources */,
+				D823BD6F1F5A9C4100F48620 /* Journey.swift in Sources */,
+				D823BD7C1F5C322900F48620 /* JourneyManager.swift in Sources */,
+				D85877321F73E20F001FA144 /* Travel.swift in Sources */,
+				D8E383611F5701B800A148AE /* Placemark.swift in Sources */,
+				D879D00A1FA9C5E5007C0797 /* FilterInterval.swift in Sources */,
+				D8C5507B1F8CCE2000B44DD9 /* PreferenceManager.swift in Sources */,
+				D879D0021FA5E17C007C0797 /* JourneyAB.swift in Sources */,
+				D8E383561F56F6B300A148AE /* JourneyFormController.swift in Sources */,
+				D8E383571F56F6B300A148AE /* JourneyFormMeta.swift in Sources */,
+				D8E383541F56F6B300A148AE /* ActiveLocationManager.swift in Sources */,
+				D8E383531F56F6B300A148AE /* LocationFinderHelper.swift in Sources */,
+				D8D6C2711F8F647B004AF8BC /* PlacemarkFormatter.swift in Sources */,
+				D8E3835C1F56F6B300A148AE /* PreferenceMeta.swift in Sources */,
+				D85877381F73F806001FA144 /* JourneyDetailLocationView.swift in Sources */,
+				D8C550771F8A272A00B44DD9 /* PlacemarkParser.swift in Sources */,
+				D8E3835B1F56F6B300A148AE /* PreferenceFormController.swift in Sources */,
+				D8E383511F56F6B300A148AE /* LocationFinderRow.swift in Sources */,
+				D81B0E241F7FBEDB00CF948A /* JourneyListTableViewController.swift in Sources */,
+				D844C6661F86820200AE29A2 /* DistanceMapHelper.swift in Sources */,
+				D879D0041FA5E1AA007C0797 /* JourneyPlacemark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D6EB501F8FAF920076864D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8E383231F56F2F000A148AE /* Myleholic */;
+			targetProxy = D8D6EB4F1F8FAF920076864D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8E3832D1F56F2F000A148AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E3832E1F56F2F000A148AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8E383321F56F2F000A148AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8E383331F56F2F000A148AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D6EB511F8FAF920076864D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J9R9DRV68;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyleholicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kati.dev.MyleholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Myleholic.app/Myleholic";
+			};
+			name = Debug;
+		};
+		D8D6EB521F8FAF920076864D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J9R9DRV68;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyleholicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kati.dev.MyleholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Myleholic.app/Myleholic";
+			};
+			name = Release;
+		};
+		D8E383361F56F2F000A148AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8E383371F56F2F000A148AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8E383391F56F2F000A148AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473D022C0FDA1DA4130BFDBF /* Pods-Myleholic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6J9R9DRV68;
+				INFOPLIST_FILE = Myleholic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kati.dev.Myleholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D8E3833A1F56F2F000A148AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67562673CEFE47E4820C0FFE /* Pods-Myleholic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6J9R9DRV68;
+				INFOPLIST_FILE = Myleholic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kati.dev.Myleholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D6EB531F8FAF920076864D /* Build configuration list for PBXNativeTarget "MyleholicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D6EB511F8FAF920076864D /* Debug */,
+				D8D6EB521F8FAF920076864D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E3831F1F56F2F000A148AE /* Build configuration list for PBXProject "Myleholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E383361F56F2F000A148AE /* Debug */,
+				D8E383371F56F2F000A148AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E383381F56F2F000A148AE /* Build configuration list for PBXNativeTarget "Myleholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E383391F56F2F000A148AE /* Debug */,
+				D8E3833A1F56F2F000A148AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8E3831C1F56F2F000A148AE /* Project object */;
+}
